@@ -3,10 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        dockerNode(image: 'node:6.3') {
-          sh 'npm --version'
-        }
-        
+        sh 'echo "hello world"'
       }
     }
   }
